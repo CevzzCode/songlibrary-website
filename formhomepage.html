@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song Information System</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas:
+                "header"
+                "content";
+            grid-template-rows: auto 1fr;
+            place-items: center;
+            background-color: #f2c2f0b8; /* Light gray background */
+        }
+
+        header {
+            grid-area: header;
+            background-color: #eb93e8; /* Medium Purple Header */
+            color: rgb(118, 60, 110);
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .main-content {
+            grid-area: content;
+            padding: 20px;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .section-divider {
+            border-top: 2px solid #a790d5;
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        .link-group a {
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #621c53;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .link-group a:nth-child(2n) {
+            background-color: #e0f7fa; /* Light cyan for even links */
+        }
+
+        .link-group a:nth-child(2n+1) {
+            background-color: #f0fff0; /* Light green for odd links */
+        }
+
+        .link-group a:hover {
+            background-color: #cce0e5; /* Slightly darker on hover */
+        }
+
+        .link-group h2 {
+            color: #4a6572; /* Darker heading color */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Song Information System</h1>
+    </header>
+
+    <div class="main-content">
+        <div class="link-group">
+            <h2>ADD DATA</h2>
+            <a href="formartist.html">Artist</a>
+            <a href="formalbum.html">Album</a>
+            <a href="formgenre.html">Genre</a>
+            <a href="formsong.html">Song</a>
+        </div>
+
+
+
+
+
+
+        <div class="main-content">
+            <div class="link-group">
+                <h2>EDIT / DELETE / SEARCH DATA</h2>
+                <a href="formeditartist.php"> Artist </a>
+                <a href="formeditalbum.php"> Album </a>
+                <a href="formeditgenre.php"> Genre </a>
+                <a href="formeditsong.php"> Song </a>
+            </div>
+
+            
+
+        <div class="section-divider link-group">
+            <h2>View Informations</h2>
+            <a href="viewartist.php">View Artist</a>
+            <a href="viewalbum.php">View Album</a>
+            <a href="viewgenre.php">View Genre</a>
+            <a href="viewsong.php">View Song</a>
+        </div>
+    </div>
+</body>
+</html>

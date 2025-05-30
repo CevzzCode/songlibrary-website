@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GENRE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #99c1dc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgb(196, 243, 249);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #bdf6f3;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #85b6eb;
+            color: rgb(213, 239, 240);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #53677d;
+        }
+
+        a {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h2>GENRE </h2>
+<form action="logicgenre.php" method="POST">
+<table>
+<tr>
+<td>Genre:</td>
+<td><input type="text" size="20" name="txtgenre" required="required"></td>
+</tr>
+
+<tr>
+<td>Subgenre:</td>
+<td><input type="text" size="20" name="txtsubgen" required="required"></td>
+</tr>
+
+
+
+<tr colspan="2">
+<td><input type="submit" name="btnAdd" value="Add Genre"></td>
+</tr>
+</table>
+</form>
+ <h3><a href="formhomepage.html">Back</a></h3>
+</body>
+</html> 
